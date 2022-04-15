@@ -1,0 +1,11 @@
+.portraits{
+    border: 2px solid black;
+}
+
+.portraits:hover{
+    background-color: gray;
+}
+
+/* .portraits:focus {     
+    background-color:yellow;    
+} */
