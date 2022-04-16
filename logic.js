@@ -1,4 +1,4 @@
-var folder = "assets/portraits";
+var folder = "https://github.com/SiamShafiq/Guess-Who-Stardew/blob/main/assets/portraits/Alex.png";
 
 $.ajax({
     url : folder,
@@ -47,8 +47,8 @@ function addNames(){
 
     for (var i = 0; i < imageNodes.length; i++){          
         let characterName = imageNodes[i].src.replace(/^.*[\\\/]/, '').split(".")[0];
-
     }
+
 }
 
 $(document).ajaxComplete(function() {
