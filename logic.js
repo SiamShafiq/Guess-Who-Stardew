@@ -1,4 +1,4 @@
-var folder = "assets/sdv_portraits";
+var folder = "assets/portraits";
 
 $.ajax({
     url : folder,
