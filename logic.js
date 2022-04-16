@@ -1,7 +1,8 @@
-var folder = "https://github.com/SiamShafiq/Guess-Who-Stardew/tree/main/assets/portraits";
+var folder = "https://protected-castle-91862.herokuapp.com/https://github.com/SiamShafiq/Guess-Who-Stardew/tree/main/assets/portraits";
 
 $.ajax({
     url : folder,
+    type: 'GET',
     success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
             if( val.match(/\.(jpe?g|png)$/) ) { 
