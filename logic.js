@@ -1,22 +1,15 @@
-var folder = "assets/portraits";
+var folder = "tree/main/assets/portraits";
 
 $.ajax({
     url : folder,
     success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
             if( val.match(/\.(jpe?g|png)$/) ) { 
-                // $(".container").append("<div id='" + val + "'class=imgContainer>");
                 $(".container").append("<div><img class='portraits' src='"+ val +"'/>");
-                // $(".container").append( "<img class='portraits' src='"+ val +"'/>" );
-
-                // $("#"+val).append("<p>Abigail</p>");
-                // $(".container").append("</div>");
             } 
         });
     }
 });
-
-
 
 
 function addEventListeners(imageNodes){
@@ -41,7 +34,6 @@ function addNames(){
     $(".container > div").append("<p>Test</p>");
     let characters = [];
     for (var i = 0; i < imageNodes.length; i++){          
-        // console.log(imageNodes[i].src.replace(/^.*[\\\/]/, '').split(".")[0]);
         let characterName = imageNodes[i].src.replace(/^.*[\\\/]/, '').split(".")[0];
         characters.push(characterName);
     }
@@ -61,7 +53,6 @@ function addNames(){
 $(document).ajaxComplete(function() {
     var imageNodes = document.getElementsByClassName('portraits');
     addEventListeners(imageNodes);
-    // setTimeout(, 1000);
 })
 
 let nightModeOn = false;
