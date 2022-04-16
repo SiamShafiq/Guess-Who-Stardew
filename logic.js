@@ -18,7 +18,6 @@ $.ajax({
        $(data).find("a:contains(.png)").each(function(){
           var images = $(this).attr("href");
           $(".container").append("<div><img class='portraits' src='"+ images +"'/>");
-  
        });
     }
   });
