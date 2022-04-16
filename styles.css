@@ -17,7 +17,8 @@ body{
 }
 
 h1{
-    /* margin: 0; */
+    margin: 0;
+    margin-bottom: 3vw;
     text-align: center;
     font-size: 2.5vw;
     /* font-family: "stardew"; */
@@ -57,7 +58,6 @@ h1{
     opacity: 0.5;
 }
 
-
 footer{
     font-family: 'Inter', sans-serif;
     position: fixed;
@@ -67,7 +67,7 @@ footer{
     background-color: lightgreen;
     color: black;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 0.9vw;
     padding: 0.2vw;
 }
 
@@ -82,7 +82,5 @@ footer{
 }
 
 #nightBtn{
-    padding: 5wpx;
-    margin: 20px;
     background-color: transparent;
 }
