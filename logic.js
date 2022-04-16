@@ -1,28 +1,3 @@
-// var folder = "https://github.com/SiamShafiq/Guess-Who-Stardew/blob/main/assets/portraits/Alex.png";
-
-// $.ajax({
-//     url : folder,
-//     type: 'GET',
-//     success: function (data) {
-//         $(data).find("a").attr("href", function (i, val) {
-//             if( val.match(/\.(jpe?g|png)$/) ) { 
-//                 $(".container").append("<div><img class='portraits' src='"+ val +"'/>");
-//             } 
-//         });
-//     }
-// });
-
-$.ajax({
-    url: "assets/portraits/",
-    success: function(data){
-       $(data).find("a:contains(.png)").each(function(){
-          var images = $(this).attr("href");
-          $(".container").append("<div><img class='portraits' src='"+ images +"'/>");
-       });
-    }
-  });
-
-
 function addEventListeners(imageNodes){
     // console.log(imageNodes);
 
@@ -36,35 +11,10 @@ function addEventListeners(imageNodes){
             
         });
     }
-
-    addNames();
 }
 
-function addNames(){
-    var imageNodes = document.getElementsByClassName('portraits');
-    $(".container > div").append("<p>Test</p>");
-    let characters = [];
-    for (var i = 0; i < imageNodes.length; i++){          
-        let characterName = imageNodes[i].src.replace(/^.*[\\\/]/, '').split(".")[0];
-        characters.push(characterName);
-    }
-
-    let counter = 0;
-    $(".container > div > p").each(function(i) {
-        this.innerHTML = characters[counter];
-        counter++;
-    })
-
-    for (var i = 0; i < imageNodes.length; i++){          
-        let characterName = imageNodes[i].src.replace(/^.*[\\\/]/, '').split(".")[0];
-    }
-
-}
-
-$(document).ajaxComplete(function() {
-    var imageNodes = document.getElementsByClassName('portraits');
-    addEventListeners(imageNodes);
-})
+var imageNodes = document.getElementsByClassName('portraits');
+addEventListeners(imageNodes);
 
 let nightModeOn = false;
 $("#nightBtn").click(function() {
