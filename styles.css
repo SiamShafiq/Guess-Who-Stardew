@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@font-face {
+    font-family: "stardew";
+    src: url("./assets/fonts/Stardew_Valley.ttf");
+}
 
 body, html{
-    /* padding: 2em; */
-    /* padding-top: 0; */
     margin: 0;
     font-family: 'Inter', sans-serif;
+    
+}
+
+body{
+    background-image: url("./assets/day.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5vw;
+    /* font-family: "stardew"; */
+
+}
+
+.container div{
+    all:unset;
 }
 
 .container{
@@ -13,15 +33,19 @@ body, html{
     /* margin-left: 2em; */
     position: relative;
     text-align: center;
+
 }
 
 .container p{
     margin: 0;
-    display:inline-block;
+    font-size: 1.4em;
+    font-weight: 800;
 }
 
 .portraits{
     border: 2px solid black;
+    width: 7.3vw;
+    margin: 1px;
 }
 
 .portraits:hover{
@@ -29,16 +53,43 @@ body, html{
 }
 
 .dark{
-    opacity: 0.3;
+    opacity: 0.5;
 }
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+  }
 
 footer{
     font-family: 'Inter', sans-serif;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    background-color: aqua;
+    background-color: lightgreen;
+    color: black;
     text-align: center;
-    font-size: 1.2em;
-    padding: 0.5em;
+    font-size: 1.4em;
+    padding: 0.2vw;
+}
+
+.container > div {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#nightBtn img{
+    width:40px;
+    background-color: transparent;
+}
+
+#nightBtn{
+    padding: 5wpx;
+    margin: 20px;
+    background-color: transparent;
 }
