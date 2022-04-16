@@ -1,16 +1,27 @@
-var folder = "https://github.com/SiamShafiq/Guess-Who-Stardew/blob/main/assets/portraits/Alex.png";
+// var folder = "https://github.com/SiamShafiq/Guess-Who-Stardew/blob/main/assets/portraits/Alex.png";
+
+// $.ajax({
+//     url : folder,
+//     type: 'GET',
+//     success: function (data) {
+//         $(data).find("a").attr("href", function (i, val) {
+//             if( val.match(/\.(jpe?g|png)$/) ) { 
+//                 $(".container").append("<div><img class='portraits' src='"+ val +"'/>");
+//             } 
+//         });
+//     }
+// });
 
 $.ajax({
-    url : folder,
-    type: 'GET',
-    success: function (data) {
-        $(data).find("a").attr("href", function (i, val) {
-            if( val.match(/\.(jpe?g|png)$/) ) { 
-                $(".container").append("<div><img class='portraits' src='"+ val +"'/>");
-            } 
-        });
+    url: "assets/portraits/",
+    success: function(data){
+       $(data).find("a:contains(.png)").each(function(){
+          var images = $(this).attr("href");
+          $(".container").append("<div><img class='portraits' src='"+ images +"'/>");
+  
+       });
     }
-});
+  });
 
 
 function addEventListeners(imageNodes){
