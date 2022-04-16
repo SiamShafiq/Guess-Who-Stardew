@@ -1,10 +1,10 @@
-var folder = "sdv_portraits/";
+var folder = "sdv_portraits";
 
 $.ajax({
     url : folder,
     success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
-            if( val.match(/\.(jpe?g)$/) ) { 
+            if( val.match(/\.(jpe?g|png)$/) ) { 
                 // $(".container").append("<div id='" + val + "'class=imgContainer>");
                 $(".container").append("<div><img class='portraits' src='"+ val +"'/>");
                 // $(".container").append( "<img class='portraits' src='"+ val +"'/>" );
