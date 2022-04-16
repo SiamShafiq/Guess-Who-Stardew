@@ -5,7 +5,11 @@ $.ajax({
     success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
             if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+                // $(".container").append("<div id='" + val + "'class=imgContainer>");
                 $(".container").append( "<img class='portraits' src='"+ val +"'/>" );
+                
+                // $("#"+val).append("<p>Abigail</p>");
+                // $(".container").append("</div>");
             } 
         });
     }
@@ -22,8 +26,12 @@ $(document).ready(function() {
 
     for (var i = 0; i < imageNodes.length; i++){          
         imageNodes[i].addEventListener("click", function() {
-            console.log("Testing");
-            testImageClick(this);
+            if($(this).hasClass("dark")){
+                $(this).removeClass("dark");
+            }else{
+                $(this).addClass("dark");
+            }
+            
         });
     }
 });
