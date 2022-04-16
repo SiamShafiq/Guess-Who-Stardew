@@ -4,7 +4,7 @@ $.ajax({
     url : folder,
     success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
-            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+            if( val.match(/\.(jpe?g)$/) ) { 
                 // $(".container").append("<div id='" + val + "'class=imgContainer>");
                 $(".container").append("<div><img class='portraits' src='"+ val +"'/>");
                 // $(".container").append( "<img class='portraits' src='"+ val +"'/>" );
