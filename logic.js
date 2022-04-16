@@ -1,4 +1,4 @@
-var folder = "assets/portraits/";
+var folder = "https://github.com/SiamShafiq/Guess-Who-Stardew/tree/main/assets/portraits";
 
 $.ajax({
     url : folder,
