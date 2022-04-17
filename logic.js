@@ -1,5 +1,7 @@
+
+
+
 function addEventListeners(imageNodes){
-    // console.log(imageNodes);
 
     for (var i = 0; i < imageNodes.length; i++){          
         imageNodes[i].addEventListener("click", function() {

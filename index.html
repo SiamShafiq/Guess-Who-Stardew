@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="assets/favicon.png">
         <link rel="stylesheet" href="styles.css">
+        
+
     </head>
     <body>
         <button id="nightBtn"><img src="./assets/moon.png"></button>
@@ -81,6 +83,11 @@
             <div>
                 <img class="portraits" src="./assets/portraits/Harvey.png">
                 <p>Harvey</p>
+            </div>
+
+            <div>
+                <img class="portraits" src="./assets/portraits/Henchman.webp">
+                <p>Henchman</p>
             </div>
 
             <div>
@@ -184,7 +191,27 @@
             </div>
         </div>
         <footer>Made with ❤️ by <a href="https://www.github.com/siamshafiq">Siam</a></footer>
+        <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js" type="module"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js" type="module"></script>
         <script src="jquery-3.6.0.js"></script>
         <script src="logic.js"></script>
+
+        <script>
+            function initializeApp(){
+                const firebaseConfig = {
+                    apiKey: "AIzaSyAOsCS3JFr94ktjFU7ALiFrQJq4TQAUoZY",
+                    authDomain: "stardew-guesswho.firebaseapp.com",
+                    projectId: "stardew-guesswho",
+                    storageBucket: "stardew-guesswho.appspot.com",
+                    messagingSenderId: "85659230465",
+                    appId: "1:85659230465:web:bfc1d5dda0db90899a7b00",
+                    measurementId: "G-Z68PV0SXWF"
+                };
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+            }
+        </script>
+        
     </body>
 </html>
