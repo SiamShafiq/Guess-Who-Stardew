@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-@font-face {
-    font-family: "stardew";
-    src: url("./assets/fonts/Stardew_Valley.ttf");
-}
 
 body, html{
     margin: 0;
@@ -52,8 +48,6 @@ h1{
 
 .portraits:hover{
     background: #2ea1fb;
-
-;
 }
 
 .dark{

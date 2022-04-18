@@ -1,6 +1,3 @@
-
-
-
 function addEventListeners(imageNodes){
 
     for (var i = 0; i < imageNodes.length; i++){          
