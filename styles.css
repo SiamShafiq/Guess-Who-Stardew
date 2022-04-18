@@ -12,13 +12,27 @@ body{
     background-repeat: no-repeat;
 }
 
-h1{
-    margin: 0;
-    margin-bottom: 3vw;
-    text-align: center;
-    font-size: 2.5vw;
-    /* font-family: "stardew"; */
+#topbar{
+    /* background-color: lightblue; */
+    padding: 20px;
+    margin-bottom: 6vw;
+    
+}
 
+#topButtons{
+    /* display: flex; */
+    /* flex-direction:row; */
+    /* display: inline-block; */
+    float: right;
+}
+
+h1{
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+    font-size: 2.5vw;
+    padding: 0.1em;
+    background-color:#57d854;
 }
 
 .container div{
@@ -31,7 +45,6 @@ h1{
     /* margin-left: 2em; */
     position: relative;
     text-align: center;
-
 }
 
 .container p{
@@ -41,13 +54,14 @@ h1{
 }
 
 .portraits{
-    border: 2px solid black;
+    border: 2px solid transparent;
     width: 6.5vw;
     margin: 1px;
 }
 
 .portraits:hover{
     background: #2ea1fb;
+    /* border: 2px dashed black; */
 }
 
 .dark{
@@ -72,11 +86,17 @@ footer{
     margin-bottom: 20px;
 }
 
-#nightBtn img{
+/* #nightBtn img{
+    width:40px;
+    background-color: transparent;
+} */
+
+button img{
     width:40px;
     background-color: transparent;
 }
 
-#nightBtn{
-    background-color: transparent;
+button{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
