@@ -8,12 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="assets/favicon.png">
         <link rel="stylesheet" href="styles.css">
-        
 
     </head>
     <body>
         <div id="topbar">
-            <h1>Stardew Valley Guess Who</h1>
+            <h1>Stardew Valley Guess Who</h1><h2 class="gameCode">Game Code:<span id="gameCode">ADSADS</span></h2>
+            <button id="acceptCharBtn" disabled><img src="./assets/check.png"></button>
+            <div id="ex1" class="modal">
+                <p>Pick your character and hit the tick button on the top to confirm!</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
             <div id="topButtons">
                 <button id="nightBtn"><img src="./assets/004-dark-mode.png"></button>
                 <button id="male"><img src="./assets/002-masculine.png"></button>
@@ -197,10 +202,14 @@
                 <img class="portraits male" src="./assets/portraits/Wizard.png">
                 <p>Wizard</p>
             </div>
+
+            <div class="character playerChar">
+                <img class="portraits" id="playerAva" src="./assets/empty.png">
+                <p id="selectedChar">Your Character</p>
+            </div>
         </div>
         <footer>Made with ❤️ by <a href="https://www.github.com/siamshafiq">Siam</a></footer>
         
-
         <script type="module">
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
             import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
@@ -221,6 +230,8 @@
 
           </script>
           <script src="jquery-3.6.0.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
           <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
           <script src="logic.js"></script>
         

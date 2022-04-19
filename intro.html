@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Guess Who - Stardew Valley</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="introStyles.css">
+    </head>
+    <body>
+        
+        <div id="buttonContainer">
+            <h1>Create or join a session!</h1>
+            <input id="gameIDInput" placeholder="Enter Game ID" maxlength="6"></input>
+            <button disabled id="findGame">Find Game</button>
+            <button id="createGame">Create Game</button>
+        </div>
+        
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+          
+            const firebaseConfig = {
+              apiKey: "AIzaSyAOsCS3JFr94ktjFU7ALiFrQJq4TQAUoZY",
+              authDomain: "stardew-guesswho.firebaseapp.com",
+              projectId: "stardew-guesswho",
+              storageBucket: "stardew-guesswho.appspot.com",
+              messagingSenderId: "85659230465",
+              appId: "1:85659230465:web:bfc1d5dda0db90899a7b00",
+              measurementId: "G-Z68PV0SXWF"
+            };
+          
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+
+          </script>
+          <script src="jquery-3.6.0.js"></script>
+          <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+          <script src="logic.js"></script>
+        
+    </body>
+</html>

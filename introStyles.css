@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+body, html{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+}
+
+body{
+    background-image: url("./assets/day.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+#buttonContainer{
+    display: flex;
+    flex-direction: column;
+    width: 17vw;
+    justify-content: center;
+}
+
+#gameIDInput{
+    background-color: transparent;
+    padding: 1em;
+    font-size: 0.9vw;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#gameIDInput::placeholder{   
+    text-align: center;
+}
+
+button{
+    border-radius: 10px;
+    padding: 20px;
+    margin: 1px;
+    font-size: 1.1vw;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+

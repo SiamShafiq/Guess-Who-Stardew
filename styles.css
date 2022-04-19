@@ -45,6 +45,7 @@ h1{
     /* margin-left: 2em; */
     position: relative;
     text-align: center;
+    
 }
 
 .container p{
@@ -84,6 +85,7 @@ footer{
 .container > div {
     display: inline-block;
     margin-bottom: 20px;
+    /* width: 128px; */
 }
 
 /* #nightBtn img{
@@ -99,4 +101,46 @@ button img{
 button{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gameCode{
+    background-color: #2ea1fb;
+    display: inline;
+    padding: 0.1em;
+
+    font-size: 2.5vw;
+    margin-left: 20px;
+}
+
+.playerChar img{
+    pointer-events: none;
+    background-color:#57d854;
+    border: 4px solid black;
+    /* width: 6.5vw; */
+}
+
+.modal{
+    font-size: 1.1vw;
+}
+
+#gameState{
+    background-color: #2ea1fb;
+    /* display: block; */
+    margin: 0;
+    display: none;
+    padding: 0.1em;
+    font-size: 2.5vw;
+    /* margin-left: 20px; */
+}
+
+#acceptCharBtn:disabled{
+    background-color: transparent;
+}
+#acceptCharBtn{
+    background-color: #57d854;
+    /* border: 2px solid black; */
+    margin-left: 0.1vw;
+    font-size: 2.5vw;
+    padding: 0.1em;
+    width: 5vw;
 }
