@@ -76,7 +76,7 @@ footer{
     background-color: #57d854;
     color: black;
     text-align: center;
-    font-size: 0.9vw;
+    /* font-size: 0.9vw; */
     padding: 0.2vw;
 }
 
@@ -98,4 +98,25 @@ button img{
 button{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+    #topButtons{
+        margin: 20px;
+        float: none;
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    #topbar{
+        text-align: center;
+    }
+
+    .container{
+        padding-top: 30px;
+        background-color:rgba(255, 255, 255, 0.6);
+    }
 }
