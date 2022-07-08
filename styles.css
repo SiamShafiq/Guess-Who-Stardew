@@ -30,7 +30,6 @@ h1{
     margin: 0 auto;
     display: inline-block;
     text-align: left;
-    font-size: 2.5vw;
     padding: 0.1em;
     background-color:#57d854;
 }
@@ -55,7 +54,7 @@ h1{
 
 .portraits{
     border: 2px solid transparent;
-    width: 6.5vw;
+    width: 8rem;
     margin: 1px;
 }
 
